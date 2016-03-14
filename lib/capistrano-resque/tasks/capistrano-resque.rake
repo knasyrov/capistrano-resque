@@ -20,7 +20,7 @@ namespace :resque do
   end
 
   def output_redirection
-    ">> #{fetch(:resque_log_file)} 2>> #{fetch(:resque_log_file)}"
+    "> #{fetch(:resque_log_file)} 2> #{fetch(:resque_log_file)}"
   end
 
   def workers_roles
